@@ -39,8 +39,6 @@ analisis_canciones_2024/
 - Vista interactiva de los indicadores y gráficos
 
 ---
-![alt text](image.png)![alt text](image-1.png)
----
 
 ## 🛠️ Tecnologías utilizadas
 
