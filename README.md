@@ -1,6 +1,6 @@
 # Análisis de Canciones 2024 — Spotify
 
-Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo de detectar principalmente patrones de éxito y el impacto de la viralidad de canciones en redes sociales sobre plataformas de streamin. Incluye limpieza del dataset, visualizaciones y un dashboard interactivo en Power BI.
+Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo de detectar principalmente patrones de éxito y el impacto de la viralidad de canciones en redes sociales sobre plataformas de streaming. Incluye limpieza del dataset, visualizaciones y un dashboard interactivo en Power BI.
 
 ---
 
@@ -20,7 +20,7 @@ analisis_canciones_2024/
 
 ### 1. Limpieza de datos (`spotify_clean.csv`)
 - Eliminación de valores nulos y duplicados
-- Normalización de columna
+- Normalización de columnas
 - Cambio de tipo de datos
 - Exportación del dataset limpio para su uso en el análisis y el dashboard
 
