@@ -55,13 +55,38 @@ analisis_canciones_2024/
 
 ## Cómo ejecutar el proyecto
 
-Para poder ejecutar el 100% del proyecto, es necesario tener el dataset. En mi caso, esos datos los subí a una base de datos local en SQL y luego me conecté a ella desde Python.
+### Requisitos previos
+- Python 3.12
+- MySQL Server
+- pipenv
+
+### Instalación
+
+1. Instalar dependencias
+```bash
+   pipenv install
+```
+
+2. Configurar la base de datos
+   - En MySQL Workbench: `Server` → `Data Import` → seleccionar el archivo `.sql` de la carpeta `/sql`
+
+3. Configurar variables de entorno
+   - Crear un archivo `.env` en la raíz del proyecto:
+   - Este archivo contiene las credenciales para conectarse a la base de datos MySQL local
+   - Completar con los datos de tu instalación de MySQL reemplazando los valores a continuación:
+   ```
+   USER=tu_usuario_mysql
+   PASSWORD=tu_contraseña_mysql
+   HOSTNAME=localhost
+   PORT=3306
+   ```
+   - Por defecto, el usuario suele ser `root`, el hostname `localhost` y el puerto `3306`
 
 ---
 
-## Creditos
+## Créditos
 
-https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024
+Dataset original: [Most Streamed Spotify Songs 2024](https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024)
 
 ## 👤 Autor
 
