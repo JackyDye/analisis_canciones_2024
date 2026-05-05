@@ -68,7 +68,7 @@ analisis_canciones_2024/
 ```
 
 2. Configurar la base de datos
-   - En MySQL Workbench: `Server` → `Data Import` → seleccionar el archivo `.sql` de la carpeta `/sql`
+   - En MySQL Workbench: `Server` → `Data Import` → seleccionar el archivo `.sql` de la carpeta `sql`
 
 3. Configurar variables de entorno
    - Crear un archivo `.env` en la raíz del proyecto:
