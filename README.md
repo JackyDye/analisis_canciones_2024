@@ -1,4 +1,4 @@
-# Análisis de Canciones 2024 — Spotify
+# Análisis de Canciones 2024 - Spotify
 
 Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo de detectar principalmente patrones de éxito y el impacto de la viralidad de canciones en redes sociales sobre plataformas de streaming. Incluye limpieza del dataset, visualizaciones y un dashboard interactivo en Power BI.
 
