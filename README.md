@@ -1,5 +1,10 @@
 # Análisis de Canciones 2024 - Spotify
 
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo de detectar principalmente patrones de éxito y el impacto de la viralidad de canciones en redes sociales sobre plataformas de streaming. Incluye limpieza del dataset, visualizaciones y un dashboard interactivo en Power BI.
 
 ---
@@ -10,16 +15,18 @@ Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo
 analisis_canciones_2024/
 │
 ├── sql/
-│   └── database.sql     # Script para recrear la base de datos
+│   └── spotify_2024_database.sql   # Script para recrear la base de datos
 ├── assets/
-│   ├── dashboard_1.png      # Captura página 1 del dashboard
-│   └── dashboard_2.png      # Captura página 2 del dashboard
-├── spotify_analysis.ipynb   # Notebook principal con EDA y visualizaciones
-├── spotify_clean.csv        # Dataset limpio listo para análisis
-├── Dashboard.pbix           # Dashboard interactivo en Power BI
-├── pyproject.toml           # Dependencias del proyecto
-├── poetry.lock              # Versiones exactas de las dependencias
-└── .env                     # Variables de entorno (no incluido en el repo)
+│   ├── dashboard_1.png             # Captura página 1 del dashboard
+│   └── dashboard_2.png             # Captura página 2 del dashboard
+├── spotify_analysis.ipynb          # Notebook principal con EDA y visualizaciones
+├── spotify_clean.csv               # Dataset limpio listo para análisis
+├── Dashboard.pbix                  # Dashboard interactivo en Power BI
+├── setup_db.py                     # Script para configurar la base de datos
+├── pyproject.toml                  # Dependencias del proyecto
+├── poetry.lock                     # Versiones exactas de las dependencias
+├── .env.example                    # Plantilla de ejemplo de variables de entorno
+└── .env                            # Variables de entorno (no incluido en el repo)
 ```
 
 ---
@@ -72,16 +79,12 @@ analisis_canciones_2024/
 
 1. Instalar dependencias
 ```bash
-   poetry install
+poetry install
 ```
 
-2. Configurar la base de datos
-   - En MySQL Workbench: `Server` → `Data Import` → seleccionar el archivo `.sql` de la carpeta `sql`
-
-3. Configurar variables de entorno
-   - Crear un archivo `.env` en la raíz del proyecto:
-   - Este archivo contiene las credenciales para conectarse a la base de datos MySQL local
-   - Completar con los datos de tu instalación de MySQL reemplazando los valores a continuación:
+2. Configurar variables de entorno
+   - Copiar el archivo `.env.example` y renombrarlo a `.env`
+   - Completar con los datos de tu instalación de MySQL:
    ```
    USER=tu_usuario_mysql
    PASSWORD=tu_contraseña_mysql
@@ -89,6 +92,14 @@ analisis_canciones_2024/
    PORT=3306
    ```
    - Por defecto, el usuario suele ser `root`, el hostname `localhost` y el puerto `3306`
+
+3. Configurar la base de datos
+   - Una vez configurado el `.env`, correr el siguiente script para crear e importar la base de datos automáticamente:
+```bash
+   python setup_db.py
+```
+
+---
 
 ---
 
