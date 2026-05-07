@@ -77,15 +77,21 @@ analisis_canciones_2024/
 
 ### Instalación
 
+### Instalación
+
 1. Instalar dependencias
 ```bash
 poetry install
 ```
 
-2. Configurar variables de entorno
+2. Activar el entorno virtual
+```bash
+poetry shell
+```
+
+3. Configurar variables de entorno
    - Copiar el archivo `.env.example` y renombrarlo a `.env`
    - Completar con los datos de tu instalación de MySQL:
-   ```
    USER=tu_usuario_mysql
    PASSWORD=tu_contraseña_mysql
    HOSTNAME=localhost
@@ -93,7 +99,7 @@ poetry install
    ```
    - Por defecto, el usuario suele ser `root`, el hostname `localhost` y el puerto `3306`
 
-3. Configurar la base de datos
+4. Configurar la base de datos
    - Una vez configurado el `.env`, correr el siguiente script para crear e importar la base de datos automáticamente:
 ```bash
    python setup_db.py
