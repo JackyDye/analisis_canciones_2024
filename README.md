@@ -9,14 +9,22 @@ Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo
 ```
 analisis_canciones_2024/
 │
+├── sql/
+│   └── database.sql     # Script para recrear la base de datos
+├── assets/
+│   ├── dashboard_1.png      # Captura página 1 del dashboard
+│   └── dashboard_2.png      # Captura página 2 del dashboard
 ├── spotify_analysis.ipynb   # Notebook principal con EDA y visualizaciones
 ├── spotify_clean.csv        # Dataset limpio listo para análisis
-└── Dashboard.pbix           # Dashboard interactivo en Power BI
+├── Dashboard.pbix           # Dashboard interactivo en Power BI
+├── pyproject.toml           # Dependencias del proyecto
+├── poetry.lock              # Versiones exactas de las dependencias
+└── .env                     # Variables de entorno (no incluido en el repo)
 ```
 
 ---
 
-## 🔍 ¿Qué contiene este proyecto?
+## ¿Qué contiene este proyecto?
 
 ### 1. Limpieza de datos (`spotify_clean.csv`)
 - Eliminación de valores nulos y duplicados
@@ -38,33 +46,33 @@ analisis_canciones_2024/
 ### 4. Dashboard en Power BI (`Dashboard.pbix`)
 - Vista interactiva de los indicadores y gráficos
 
+![Dashboard página 1](assets/dashboard_1.png)
+![Dashboard página 2](assets/dashboard_2.png)
+
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías y requisitos
 
-| Herramienta | Uso |
-|---|---|
-| SQL | Recolección de datos a través de base de datos local |
-| Python | Limpieza, análisis y visualización |
-| Pandas | Manipulación del dataset |
-| Matplotlib / Seaborn | Gráficos exploratorios |
-| Jupyter Notebook | Entorno de desarrollo |
-| Power BI | Dashboard interactivo |
+| Herramienta | Uso
+|---|---
+| Python 3.12 | Limpieza, análisis y visualización
+| SQL | Recolección de datos a través de base de datos local
+| Pandas | Manipulación del dataset
+| Matplotlib / Seaborn | Gráficos exploratorios
+| Jupyter Notebook | Entorno de desarrollo
+| Power BI | Dashboard interactivo
+| MySQL Server | Base de datos local
+| poetry | Gestión de entorno virtual y dependencias
 
 ---
 
 ## Cómo ejecutar el proyecto
 
-### Requisitos previos
-- Python 3.12
-- MySQL Server
-- pipenv
-
 ### Instalación
 
 1. Instalar dependencias
 ```bash
-   pipenv install
+   poetry install
 ```
 
 2. Configurar la base de datos
