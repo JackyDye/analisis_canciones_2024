@@ -58,6 +58,15 @@ analisis_canciones_2024/
 
 ---
 
+## Hallazgos principales
+
+- **Modelos de éxito coexisten:** Hay artistas que acumulan streams con catálogos grandes y otros con catálogos chicos con hits puntuales de alto impacto. Ambas estrategias funcionan, aunque el modelo de volumen domina enormemente.
+- **La viralidad no garantiza streams:** la correlación entre viralidad en TikTok y streams en Spotify es prácticamente inexistente. En el caso de YouTube, existe una correlación débil muy poco determinante.
+- **El contenido explícito no importa:** no se encontró evidencia significativa de que el contenido explícito influya en la popularidad de una canción en Spotify.
+- **La novedad gana sobre la longevidad:** el streaming en 2024 favoreció canciones recientes, con una concentración notable de streams en lanzamientos del período 2017-2023.
+
+---
+
 ## Tecnologías y requisitos
 
 | Herramienta | Uso
