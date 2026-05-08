@@ -118,8 +118,6 @@ poetry shell
 
 ---
 
----
-
 ## Créditos
 
 Dataset original: [Most Streamed Spotify Songs 2024](https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024)
