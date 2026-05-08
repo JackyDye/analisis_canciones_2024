@@ -101,6 +101,8 @@ poetry shell
 3. Configurar variables de entorno
    - Copiar el archivo `.env.example` y renombrarlo a `.env`
    - Completar con los datos de tu instalación de MySQL:
+   
+   ```bash
    USER=tu_usuario_mysql
    PASSWORD=tu_contraseña_mysql
    HOSTNAME=localhost
