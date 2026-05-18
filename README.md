@@ -85,19 +85,23 @@ analisis_canciones_2024/
 
 ### Instalación
 
-### Instalación
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/JackyDye/analisis_canciones_2024
+cd analisis_canciones_2024
+```
 
-1. Instalar dependencias
+2. Instalar dependencias
 ```bash
 poetry install
 ```
 
-2. Activar el entorno virtual
+3. Activar el entorno virtual
 ```bash
 poetry shell
 ```
 
-3. Configurar variables de entorno
+4. Configurar variables de entorno
    - Copiar el archivo `.env.example` y renombrarlo a `.env`
    - Completar con los datos de tu instalación de MySQL:
    
@@ -109,7 +113,7 @@ poetry shell
    ```
    - Por defecto, el usuario suele ser `root`, el hostname `localhost` y el puerto `3306`
 
-4. Configurar la base de datos
+5. Configurar la base de datos
    - Una vez configurado el `.env`, correr el siguiente script para crear e importar la base de datos automáticamente:
 ```bash
    python setup_db.py
