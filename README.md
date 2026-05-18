@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 Análisis exploratorio de datos (EDA) sobre canciones de Spotify con el objetivo de detectar principalmente patrones de éxito y el impacto de la viralidad de canciones en redes sociales sobre plataformas de streaming. Incluye limpieza del dataset, visualizaciones y un dashboard interactivo en Power BI.
@@ -25,8 +25,7 @@ analisis_canciones_2024/
 ├── setup_db.py                     # Script para configurar la base de datos
 ├── pyproject.toml                  # Dependencias del proyecto
 ├── poetry.lock                     # Versiones exactas de las dependencias
-├── .env.example                    # Plantilla de ejemplo de variables de entorno
-└── .env                            # Variables de entorno (no incluido en el repo)
+└── .env.example                    # Plantilla de ejemplo de variables de entorno
 ```
 
 ---
