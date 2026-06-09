@@ -128,4 +128,4 @@ Dataset original: [Most Streamed Spotify Songs 2024](https://www.kaggle.com/data
 ## 👤 Autor
 
 **JackyDye**  
-[GitHub](https://github.com/JackyDye)
+[GitHub](https://github.com/JackyDye) · [LinkedIn](https://www.linkedin.com/in/augusto-valles/)
